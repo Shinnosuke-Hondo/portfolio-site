@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Web Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .works {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .work-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+    }
+    .work-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.work-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.detail-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.detail-btn:hover {
+  background: #444;
+}
+
+    @media (max-width: 700px) {
+      .works {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .work-card {
+        width: 90%;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Web Portfolio</h1>
+    <p>HTML / CSS / JavaScriptを使ったWeb制作・修正に対応します。</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+<p>
+Web制作を学習しています。
+HTML / CSS / JavaScriptを使用したWebサイト制作や、
+既存サイトの軽微な修正、スマホ表示の調整などに対応しています。
+</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p>HTML / CSS / JavaScript / Responsive Design</p>
+  </section>
+
+  <section>
+    <h2>Works</h2>
+
+    <div class="works">
+
+      <div class="work-card">
+  <img src="hotel1.png" alt="Hotel Website Main">
+  <h3>Hotel Website</h3>
+  <p>ホテル紹介サイト</p>
+  <p>レスポンシブ対応 / 背景画像 / カードレイアウト / ページ内リンク</p>
+  <p><strong>使用技術:</strong> HTML / CSS / JavaScript</p>
+<p><strong>対応内容:</strong> レスポンシブ対応、画像調整、ボタン動作など</p>
+<a href="Hotel.html" class="detail-btn">詳細を見る</a>
+</div>
+
+      <div class="work-card">
+  <img src="stadium.jpeg" alt="Stamford Bridge Tour">
+  <h3>Stamford Bridge Tour</h3>
+  <p>サッカー観戦ツアー紹介サイト</p>
+  <p>画像調整 / hover / JavaScriptによるボタン動作 / スマホ対応</p>
+  <p><strong>使用技術:</strong> HTML / CSS / JavaScript</p>
+<p><strong>対応内容:</strong> レスポンシブ対応、画像調整、ボタン動作など</p>
+<a href="stadium.html" class="detail-btn">詳細を見る</a>
+</div>
+
+<div class="work-card">
+  <img src="cafe.jpeg" alt="London Cafe">
+  <h3>London Cafe</h3>
+  <p>Web修正課題</p>
+  <p>画像サイズ修正 / hover / スマホ対応 / JavaScript</p>
+  <p><strong>使用技術:</strong> HTML / CSS / JavaScript</p>
+<p><strong>対応内容:</strong> レスポンシブ対応、画像調整、ボタン動作など</p>
+<a href="cafe.html" class="detail-btn">詳細を見る</a>
+</div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Available Work</h2>
+<p>
+文字修正 / 画像差し替え / CSS調整 / ボタン修正 /
+リンク修正 / スマホ表示調整 / 簡単なJavaScript修正 など
+</p>
+  </section>
+
+</body>
+</html>
